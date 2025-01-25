@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+    body {
+        margin: 0;
+        font-family: 'Press Start 2P', serif;
+        background-image: url("../../assets/background.jpg");
+        color: #fff;
+    }
+
+    .header {
+        background-color: #202124;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-content {
+        font-size: 2rem;
+        font-weight: bold;
+        background: linear-gradient(90deg, #2d2e2f, #fff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    
+    .btn {
+        background-color: #adadad !important;
+        color : white;
+        border: none;
+        padding: 7px 15px;
+        width: 150px;
+        font-size: 0.8rem;
+        font-family: 'Press Start 2P', serif;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    
+
+    svg {
+        color: #fff;
+    }
+
+  
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+
+    .products {
+        padding: 1rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .product-card{
+        width: 300px;
+    }
+    .products img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .card {
+        background: rgba(89, 131, 83, 0.09);
+        backdrop-filter: blur(14px);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card .card-title {
+        font-size: 15px !important;
+        font-weight: bold;
+
+    }
+    .card-text{
+        margin-top: 10px;
+    }
+    .card span {
+        
+        background-color: #f7f7f7;
+        border-radius: 50%;
+        color: black;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .card span:nth-child(2) {
+        background-color: rgba(89, 131, 83, 0);
+        color: #f7f7f7;
+        cursor: default;
+        border: none;
+    }
+    .card-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card span:nth-child(4) {
+        background-color: rgba(89, 131, 83, 0);
+        color: #f7f7f7;
+        cursor: default;
+        border: none;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .products {
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+        }
+        
+    }
+
+    @media (max-width:600px) {
+        .products{
+            grid-template-columns: repeat(1,minmax(300px,1fr));
+
+        }
+    }
+    @media (max-width: 480px) {
+        .header {
+            padding: 0.5rem;
+        }
+
+        .header h1 {
+            font-size: 1.2rem;
+        }
+
+        .products {
+            grid-template-columns: repeat(1,minmax(300px,1fr));
+        }
+        
+    }

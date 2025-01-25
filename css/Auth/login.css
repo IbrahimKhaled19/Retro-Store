@@ -1,0 +1,162 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* Start Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url("../../assets/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+/* Reset Componant */
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+span {
+  display: none;
+}
+.error {
+  font-size: 10px;
+  color: red;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  width: 400px;
+  line-height: 3;
+  display: block;
+}
+/* ===== Start variable ===== */
+:root {
+  --t-c-b: #ffffff;
+}
+/* ===== End variable ===== */
+
+/* ===== Strat Media Query ===== */
+.container {
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+/* == Small Screen == */
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0px 20px;
+  }
+}
+/* == Meduim Screen == */
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+}
+/* == Larger Screen == */
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+/* Fix White Space Problem  */
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+/* ===== End Media Query ===== */
+/* End Global Rules */
+/* Start The Header Section */
+header nav h1 {
+  color: var(--t-c-b);
+  text-align: center;
+  margin: 0;
+  padding: 45px;
+}
+/* End The Header Section */
+/* Start the Form Section */
+section {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form div:not(.f-submit) input:focus {
+  outline: 0;
+}
+form div:not(.f-submit) input {
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 13px;
+  width: 350px;
+  border: 0;
+}
+form > div:first-child,
+form > div.i-password {
+  background-color: #ffffff;
+  border-radius: 7px;
+  width: 400px;
+}
+form > div:not(:last-child) {
+  position: relative;
+}
+form > div > div {
+  padding-left: 10px;
+}
+form div > i {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+  display: block;
+  margin-right: 30px;
+}
+form > div:not(.f-submit) {
+  margin-bottom: 30px;
+  padding: 7px 15px;
+  border: 3px solid #000000;
+}
+form > .f-submit > input {
+  background-color: #fff;
+  color: #000;
+  width: 200px;
+  height: 40px;
+  padding: 7px 15px;
+  border-radius: 7px;
+  border: 2px solid #000;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+form > a {
+  color: #fff;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+form a:visited {
+  color: #fff;
+}
+
+/* End The Form Section */

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+body {
+    font-family: 'Press Start 2P', serif !important;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ffcc00;
+    border-bottom: 2px solid #333;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #333 !important;
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
